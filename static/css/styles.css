@@ -1,0 +1,119 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #fff;
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Start Button */
+#start {
+    background: #38b000;
+    color: #fff;
+}
+
+#start:hover {
+    background: #2d9500;
+}
+
+/* Stop Button */
+#stop {
+    background: #d00000;
+    color: #fff;
+}
+
+#stop:disabled {
+    background: #555;
+    cursor: not-allowed;
+}
+
+#stop:hover:not(:disabled) {
+    background: #a00000;
+}
+
+/* Status Styles */
+#status {
+    font-size: 1em;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Voice Assistant Styles */
+.assistant-container {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#transcription {
+    font-size: 1em;
+    color: #eee;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    min-height: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 500px) {
+    button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audio Recorder</title>
+<link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Record and Upload Audio</h1>
+        <div class="button-container">
+            <button id="start">🎙️ Start Recording</button>
+            <button id="stop" disabled>🛑 Stop Recording</button>
+        </div>
+        <p id="status">Press "Start Recording" to begin...</p>
+        <div class="assistant-container">
+            <h2>Voice Assistant</h2>
+            <p id="transcription">Your transcription will appear here...</p> 
+        </div>
+    </div>
+    <script src="/static/js/recorder.js"></script>
+</body>
+</html>
